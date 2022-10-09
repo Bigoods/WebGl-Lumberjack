@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WebGl - Three.js
+        </title>
+    </head>
+    <body>
+        
+        <div id="container"></div>
+        <script src="./JavaScript/fflate.min.js"></script>
+        <script src="./JavaScript/three.js"></script>
+        <script src="./JavaScript/PointerLockControls.js"></script>
+        <script src="./JavaScript/FBXLoader.js"></script>
+        <script src="./JavaScript/light.js"></script>
+        <script src="./JavaScript/objetos.js"></script>
+        <script src="./JavaScript/scene.js"></script>
+        <script src="./JavaScript/inputs.js"></script>
+        <label id="Troncos" class="Tronco"></label>     
+        <script src="./JavaScript/app.js"></script>
+        <label id="time" class="TextTimer">Tempo restante: </label>
+        <label id="time" class="timer"></label>
+        <label class="topleft">Número de troncos:</label> 
+        <label id="Troncos" class="Tronco"></label> 
+        <label class="arv">E - Cortar Arvore</label>
+        <label class="lan">  L - Lanterna</label>
+        <label class="fo">  J - Luz fogo</label>
+        <label class="amb">  K - Luz Ambiente</label>
+        <label class="lua">  M - Lua</label>
+        <label class="ceu">  I - Luz Ceu</label>
+        <label id="gameOver" class="GameOver"></label>
+        <button class="GameOverButton" id="gameOverBtn" onclick="reset()" style="display:none;">Try Again</button>
+    </body>
+</html>
+<style>
+    .GameOverButton{
+        position: absolute;
+        text-align: center;
+        font-size: 18px;
+        top: 55%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color:black; 
+    }
+
+    .GameOver{
+        position: absolute;
+        text-align: center;
+        font-size: 23px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color:white; 
+    }
+
+    .topleft{
+        position: absolute;
+        font-size: 18px;
+        top:2%;
+        left:2%;
+        color:white; 
+    }
+    .timer{
+        position: absolute;
+        font-size: 18px;
+        top:2%;
+        left:60%;
+        color:white; 
+    }
+    .TextTimer{
+        position: absolute;
+        font-size: 18px;
+        top:2%;
+        left:40%;
+        color:white; 
+    }
+    .Tronco{
+        position: absolute;
+        font-size: 18px;
+        top:2%;
+        left: 180px;
+        color:white; 
+    }
+    .arv{
+        position: absolute;
+        top: 2%;
+        right:5%;
+        color:white;
+    }
+    .lan{
+        position: absolute;
+        top: 4%;
+        right:5%;
+        color:white;
+    }
+    .fo{
+        position: absolute;
+        top: 6%;
+        right:5%;
+        color:white;
+    }
+    .amb{
+        position: absolute;
+        top: 8%;
+        right:5%;
+        color:white;
+    }
+    .lua{
+        position: absolute;
+        top: 10%;
+        right:5%;
+        color:white;
+    }
+    .ceu{
+        position: absolute;
+        top: 12%;
+        right:5%;
+        color:white;
+    }
+    body {
+        overflow: hidden; /* Hide scrollbars */
+    }
+</style>
